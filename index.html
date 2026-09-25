@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#315b3a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Dino Discovery">
+  <meta name="description" content="A friendly dinosaur flash-card and picture quiz game for young explorers.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <title>Dino Discovery!</title>
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div id="confetti" class="confetti" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <button id="home-button" class="round-button home-button is-hidden" type="button" aria-label="Go to the home screen">
+      <span aria-hidden="true">⌂</span>
+    </button>
+    <div class="brand" aria-label="Dino Discovery">
+      <span class="brand-footprint" aria-hidden="true">●</span>
+      <span>Dino Discovery!</span>
+    </div>
+    <button id="sound-button" class="round-button" type="button" aria-label="Turn sound off" aria-pressed="true">
+      <span aria-hidden="true">♪</span>
+    </button>
+  </header>
+
+  <main id="app" tabindex="-1">
+    <section id="home-screen" class="screen home-screen is-active" aria-labelledby="home-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Junior Paleontologist Club</p>
+        <h1 id="home-title">Big dinos.<br><em>Little explorers.</em></h1>
+        <p class="hero-intro">Tap, listen, and discover twelve amazing prehistoric friends!</p>
+        <div class="home-actions" aria-label="Choose a game">
+          <button id="cards-button" class="action-button action-cards" type="button">
+            <span class="action-icon" aria-hidden="true">▣</span>
+            <span><strong>Meet the Dinos</strong><small>Flip &amp; listen</small></span>
+            <span class="action-arrow" aria-hidden="true">→</span>
+          </button>
+          <button id="quiz-button" class="action-button action-quiz" type="button">
+            <span class="action-icon" aria-hidden="true">★</span>
+            <span><strong>Play Dino Quiz</strong><small>Find the picture</small></span>
+            <span class="action-arrow" aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun-disc"></div>
+        <div class="mountain mountain-one"></div>
+        <div class="mountain mountain-two"></div>
+        <div class="hero-dino" id="hero-dino"></div>
+        <div class="fern fern-one">❧</div>
+        <div class="fern fern-two">❧</div>
+        <div class="age-stamp"><strong>4–5</strong><span>YEARS</span></div>
+      </div>
+      <p class="grownup-note">Grown-up tip: use the sound button to hear every name.</p>
+    </section>
+
+    <section id="cards-screen" class="screen cards-screen" aria-labelledby="cards-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Field Cards</p>
+          <h2 id="cards-title">Meet the dinosaurs</h2>
+        </div>
+        <p id="card-progress" class="progress-label" aria-live="polite">1 of 12</p>
+      </div>
+
+      <div class="card-stage">
+        <button id="previous-card" class="nav-button previous" type="button" aria-label="Previous dinosaur">←</button>
+        <div id="flash-card" class="flash-card" role="button" tabindex="0" aria-label="Flip dinosaur card" aria-pressed="false">
+          <div class="card-inner">
+            <article class="card-face card-front">
+              <div class="specimen-label">SPECIMEN <span id="specimen-number">01</span></div>
+              <div id="card-art" class="card-art"></div>
+              <div class="card-title-block">
+                <p id="card-nickname" class="card-nickname"></p>
+                <h3 id="card-name"></h3>
+                <p id="card-syllables" class="syllables"></p>
+              </div>
+              <p class="tap-hint"><span aria-hidden="true">↻</span> Tap to discover</p>
+            </article>
+            <article class="card-face card-back">
+              <div class="fact-topline">
+                <span id="diet-badge" class="diet-badge"></span>
+                <span id="period-label" class="period-label"></span>
+              </div>
+              <p id="fact-emoji" class="fact-emoji" aria-hidden="true"></p>
+              <h3 id="fact-heading">Did you know?</h3>
+              <p id="card-fact" class="card-fact"></p>
+              <p id="card-size" class="card-size"></p>
+              <p class="tap-hint"><span aria-hidden="true">↻</span> Tap to see the dino</p>
+            </article>
+          </div>
+        </div>
+        <button id="next-card" class="nav-button next" type="button" aria-label="Next dinosaur">→</button>
+      </div>
+
+      <div class="card-controls">
+        <button id="hear-card" class="listen-button" type="button"><span aria-hidden="true">◖</span> Hear its name</button>
+        <div id="card-dots" class="card-dots" aria-label="Dinosaur card position"></div>
+      </div>
+    </section>
+
+    <section id="quiz-screen" class="screen quiz-screen" aria-labelledby="quiz-title">
+      <div class="quiz-topline">
+        <div>
+          <p class="eyebrow">Dino Challenge</p>
+          <h2 id="quiz-title">Which one is <span id="quiz-target">T. rex</span>?</h2>
+        </div>
+        <div class="star-counter" aria-label="Stars earned"><span aria-hidden="true">★</span> <strong id="star-count">0</strong><small>/ 5</small></div>
+      </div>
+      <button id="hear-question" class="question-listen" type="button"><span aria-hidden="true">♪</span> Hear the question</button>
+      <div id="quiz-options" class="quiz-options" aria-label="Choose a dinosaur"></div>
+      <div id="quiz-feedback" class="quiz-feedback" role="status" aria-live="assertive"></div>
+      <div class="quiz-progress" aria-label="Quiz progress"><div id="quiz-progress-fill"></div></div>
+    </section>
+
+    <section id="finish-screen" class="screen finish-screen" aria-labelledby="finish-title">
+      <div class="finish-burst" aria-hidden="true"><span>★</span><span>★</span><span>★</span></div>
+      <div class="explorer-patch" aria-hidden="true"><span>🦕</span><strong>DINO<br>EXPLORER</strong></div>
+      <p class="eyebrow">Challenge Complete</p>
+      <h2 id="finish-title">ROAR-some work!</h2>
+      <p>You found all five dinosaurs and earned your explorer patch.</p>
+      <div class="earned-stars" aria-label="Five stars earned">★★★★★</div>
+      <div class="finish-actions">
+        <button id="play-again" class="action-button compact action-quiz" type="button"><strong>Play again</strong><span aria-hidden="true">↻</span></button>
+        <button id="meet-more" class="action-button compact action-cards" type="button"><strong>Meet the dinos</strong><span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+  </main>
+
+  <noscript>This dinosaur game needs JavaScript enabled to play.</noscript>
+  <script src="app.js" defer></script>
+</body>
+</html>

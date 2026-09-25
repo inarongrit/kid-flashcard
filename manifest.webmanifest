@@ -1,0 +1,19 @@
+{
+  "name": "Dino Discovery!",
+  "short_name": "Dino Discovery",
+  "description": "A friendly dinosaur flash-card and picture quiz game for young explorers.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f5edcf",
+  "theme_color": "#315b3a",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
