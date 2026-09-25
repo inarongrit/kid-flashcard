@@ -303,5 +303,5 @@ $("#hear-question").addEventListener("click", () => speak(`Which one is ${state.
 document.querySelectorAll(".card-dot").forEach((dot) => dot.addEventListener("click", () => { state.cardIndex = Number(dot.dataset.index); renderCard(); speak(dinosaurs[state.cardIndex].fullName); }));
 
 if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js?v=4").catch(() => {}));
 }
