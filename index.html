@@ -11,7 +11,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.svg">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
   <title>Dino Discovery!</title>
 </head>
 <body>
@@ -36,7 +36,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Junior Paleontologist Club</p>
         <h1 id="home-title">Big dinos.<br><em>Little explorers.</em></h1>
-        <p class="hero-intro">Tap, listen, and discover twelve amazing prehistoric friends!</p>
+        <p class="hero-intro">Tap, listen, and discover twenty-four amazing prehistoric friends!</p>
         <div class="home-actions" aria-label="Choose a game">
           <button id="cards-button" class="action-button action-cards" type="button">
             <span class="action-icon" aria-hidden="true">▣</span>
@@ -69,7 +69,7 @@
           <p class="eyebrow">Field Cards</p>
           <h2 id="cards-title">Meet the dinosaurs</h2>
         </div>
-        <p id="card-progress" class="progress-label" aria-live="polite">1 of 12</p>
+        <p id="card-progress" class="progress-label" aria-live="polite">1 of 24</p>
       </div>
 
       <div class="card-stage">
@@ -104,7 +104,7 @@
 
       <div class="card-controls">
         <button id="hear-card" class="listen-button" type="button"><span aria-hidden="true">◖</span> Hear its name</button>
-        <div id="card-dots" class="card-dots" aria-label="Dinosaur card position"></div>
+        <div id="card-dots" class="card-dots" aria-hidden="true"></div>
       </div>
     </section>
 
@@ -137,6 +137,6 @@
   </main>
 
   <noscript>This dinosaur game needs JavaScript enabled to play.</noscript>
-  <script src="app.js?v=4" defer></script>
+  <script src="app.js?v=5" defer></script>
 </body>
 </html>

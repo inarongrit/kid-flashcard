@@ -1,7 +1,7 @@
 "use strict";
 
-const CACHE_NAME = "dino-discovery-v4";
-const APP_SHELL = ["./", "./index.html", "./styles.css?v=4", "./app.js?v=4", "./manifest.webmanifest", "./icon.svg"];
+const CACHE_NAME = "dino-discovery-v5";
+const APP_SHELL = ["./", "./index.html", "./styles.css?v=5", "./app.js?v=5", "./manifest.webmanifest", "./icon.svg"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)).then(() => self.skipWaiting()));
