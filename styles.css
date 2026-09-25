@@ -106,11 +106,12 @@ h2 { font-size: clamp(2.25rem, 5vw, 4rem); letter-spacing: -.03em; }
 .card-inner { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transition: transform .65s cubic-bezier(.2,.78,.2,1); }
 .flash-card.is-flipped .card-inner { transform: rotateY(180deg); }
 .card-face { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border: 4px solid var(--ink); border-radius: 35px 12px 35px 12px; box-shadow: var(--shadow); overflow: hidden; }
-.card-front { background: linear-gradient(160deg, #fff7d8 0 58%, #efd98c 58%); display: grid; grid-template-columns: 1fr .9fr; grid-template-rows: 1fr auto; padding: clamp(22px, 4vw, 42px); }
+.card-front { background: radial-gradient(circle at 18% 22%, rgba(255,255,255,.72), transparent 28%), repeating-linear-gradient(0deg, transparent 0 31px, rgba(63,72,53,.045) 31px 32px), linear-gradient(155deg, #eee6cf 0 57%, #d7c7a0 57%); display: grid; grid-template-columns: 1fr .9fr; grid-template-rows: 1fr auto; padding: clamp(22px, 4vw, 42px); }
 .card-front::after { content: ""; position: absolute; width: 70%; height: 44%; border: 3px dashed rgba(36,75,53,.22); border-radius: 50%; left: -15%; bottom: -25%; transform: rotate(8deg); }
 .specimen-label { position: absolute; top: 20px; right: 22px; font-size: .72rem; letter-spacing: .12em; font-weight: 900; opacity: .65; z-index: 2; }
 .card-art { align-self: center; grid-row: 1 / 3; width: 118%; margin-left: -8%; z-index: 1; }
-.card-art svg { display: block; width: 100%; filter: drop-shadow(0 16px 8px rgba(36,75,53,.2)); }
+.card-art svg { display: block; width: 100%; filter: saturate(.88) contrast(1.06) drop-shadow(0 18px 10px rgba(31,42,32,.24)); }
+.card-art::after { content: "LIFE RECONSTRUCTION"; display: block; margin: -3px 0 0 12%; color: rgba(35,52,39,.55); font-size: .58rem; font-weight: 900; letter-spacing: .18em; text-align: center; }
 .card-title-block { align-self: center; position: relative; z-index: 2; }
 .card-title-block h3 { font-size: clamp(2rem, 5vw, 4.2rem); overflow-wrap: anywhere; letter-spacing: -.04em; }
 .card-nickname { margin: 0 0 7px; color: var(--coral); font-size: .8rem; font-weight: 900; text-transform: uppercase; letter-spacing: .14em; }
@@ -140,7 +141,7 @@ h2 { font-size: clamp(2.25rem, 5vw, 4rem); letter-spacing: -.03em; }
 .star-counter strong { font-family: var(--display); }.star-counter small { font-size: .8rem; font-weight: 900; }
 .question-listen { display: block; margin: 0 auto 20px; background: var(--paper); color: var(--ink); }
 .quiz-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(14px, 2.5vw, 28px); }
-.quiz-option { min-width: 0; min-height: 330px; padding: 15px 12px 18px; border: 4px solid var(--ink); border-radius: 30px 10px 30px 10px; background: var(--paper); box-shadow: 0 9px 0 var(--ink); cursor: pointer; overflow: hidden; position: relative; transition: transform .18s, background .2s, box-shadow .18s; }
+.quiz-option { min-width: 0; min-height: 330px; padding: 15px 12px 18px; border: 3px solid var(--ink); border-radius: 24px 8px 24px 8px; background: linear-gradient(160deg, #f8f2df, #ded3b8); box-shadow: 0 7px 0 var(--ink), inset 0 0 35px rgba(68,78,57,.08); cursor: pointer; overflow: hidden; position: relative; transition: transform .18s, background .2s, box-shadow .18s; }
 .quiz-option:nth-child(2) { transform: rotate(1.2deg); }.quiz-option:nth-child(3) { transform: rotate(-1deg); }
 .quiz-option:active { transform: translateY(5px); box-shadow: 0 4px 0 var(--ink); }
 .quiz-option svg { width: 100%; height: 240px; display: block; }

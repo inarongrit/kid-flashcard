@@ -1,18 +1,18 @@
 "use strict";
 
 const dinosaurs = [
-  { id: "trex", name: "T. rex", fullName: "Tyrannosaurus rex", syllables: "tie-RAN-oh-SORE-us", nickname: "The mighty biter", diet: "Meat eater", period: "Late Cretaceous", fact: "Its teeth were as big as bananas!", size: "As long as a school bus", emoji: "🦷", color: "#df654d", belly: "#f3b05e", type: "trex" },
-  { id: "triceratops", name: "Triceratops", fullName: "Triceratops", syllables: "try-SAIR-ah-tops", nickname: "The three-horn face", diet: "Plant eater", period: "Late Cretaceous", fact: "It had three horns and a giant frill.", size: "As long as a big van", emoji: "📯", color: "#e29b3e", belly: "#f3cf73", type: "triceratops" },
-  { id: "stegosaurus", name: "Stegosaurus", fullName: "Stegosaurus", syllables: "STEG-oh-SORE-us", nickname: "The plated back", diet: "Plant eater", period: "Late Jurassic", fact: "The plates on its back may have helped it show off.", size: "As long as a small bus", emoji: "🔶", color: "#6c9b58", belly: "#b6cf78", type: "stegosaurus" },
-  { id: "brachiosaurus", name: "Brachiosaurus", fullName: "Brachiosaurus", syllables: "BRACK-ee-oh-SORE-us", nickname: "The tall browser", diet: "Plant eater", period: "Late Jurassic", fact: "Its long neck reached leaves high in the trees.", size: "Taller than a giraffe", emoji: "🌿", color: "#70a9a1", belly: "#acd4bf", type: "longneck" },
-  { id: "velociraptor", name: "Velociraptor", fullName: "Velociraptor", syllables: "veh-LOSS-ih-RAP-tor", nickname: "The speedy hunter", diet: "Meat eater", period: "Late Cretaceous", fact: "It was feathered and about the size of a turkey.", size: "About as tall as a big dog", emoji: "🪶", color: "#c66c46", belly: "#eabf72", type: "raptor" },
-  { id: "ankylosaurus", name: "Ankylosaurus", fullName: "Ankylosaurus", syllables: "ANG-kih-loh-SORE-us", nickname: "The armored tank", diet: "Plant eater", period: "Late Cretaceous", fact: "Its heavy tail club helped keep it safe.", size: "As long as two beds", emoji: "🛡️", color: "#829552", belly: "#c0bd72", type: "ankylo" },
-  { id: "parasaurolophus", name: "Parasaurolophus", fullName: "Parasaurolophus", syllables: "PAIR-ah-SORE-OL-oh-fus", nickname: "The musical crest", diet: "Plant eater", period: "Late Cretaceous", fact: "Its long head crest may have made deep sounds.", size: "As long as a small bus", emoji: "🎺", color: "#d58454", belly: "#efc477", type: "parasaur" },
-  { id: "spinosaurus", name: "Spinosaurus", fullName: "Spinosaurus", syllables: "SPY-noh-SORE-us", nickname: "The river hunter", diet: "Fish & meat", period: "Late Cretaceous", fact: "It had a huge sail and spent lots of time near water.", size: "Longer than a school bus", emoji: "🐟", color: "#527f76", belly: "#8fc3a9", type: "spino" },
-  { id: "diplodocus", name: "Diplodocus", fullName: "Diplodocus", syllables: "dih-PLOD-oh-kus", nickname: "The whip tail", diet: "Plant eater", period: "Late Jurassic", fact: "Its tail was extra long and thin like a whip.", size: "As long as three school buses", emoji: "📏", color: "#8f9f4f", belly: "#cad078", type: "diplodocus" },
-  { id: "pteranodon", name: "Pteranodon", fullName: "Pteranodon", syllables: "teh-RAN-oh-don", nickname: "The flying reptile friend", diet: "Fish eater", period: "Late Cretaceous", fact: "Not a dinosaur, but a flying reptile that lived beside them!", size: "Wings wider than a car", emoji: "☁️", color: "#7b78aa", belly: "#c1afd0", type: "pteranodon" },
-  { id: "iguanodon", name: "Iguanodon", fullName: "Iguanodon", syllables: "ih-GWAH-noh-don", nickname: "The thumb spike", diet: "Plant eater", period: "Early Cretaceous", fact: "It had pointy thumb spikes on its hands.", size: "As long as a small bus", emoji: "👍", color: "#4f9263", belly: "#9ac67e", type: "iguanodon" },
-  { id: "pachy", name: "Pachycephalosaurus", fullName: "Pachycephalosaurus", syllables: "PACK-ee-SEF-ah-loh-SORE-us", nickname: "The dome head", diet: "Plant eater", period: "Late Cretaceous", fact: "The thick dome on its head was made of bone.", size: "About as long as a sofa", emoji: "⛑️", color: "#b66a55", belly: "#e6ac74", type: "pachy" }
+  { id: "trex", name: "T. rex", fullName: "Tyrannosaurus rex", syllables: "tie-RAN-oh-SORE-us", nickname: "The mighty biter", diet: "Meat eater", period: "Late Cretaceous", fact: "Its teeth were as big as bananas!", size: "As long as a school bus", emoji: "🦷", color: "#68704b", belly: "#a99a72", type: "trex" },
+  { id: "triceratops", name: "Triceratops", fullName: "Triceratops", syllables: "try-SAIR-ah-tops", nickname: "The three-horn face", diet: "Plant eater", period: "Late Cretaceous", fact: "It had three horns and a giant frill.", size: "As long as a big van", emoji: "📯", color: "#7c6b57", belly: "#b7a27d", type: "triceratops" },
+  { id: "stegosaurus", name: "Stegosaurus", fullName: "Stegosaurus", syllables: "STEG-oh-SORE-us", nickname: "The plated back", diet: "Plant eater", period: "Late Jurassic", fact: "The plates on its back may have helped it show off.", size: "As long as a small bus", emoji: "🔶", color: "#586b54", belly: "#9b7655", type: "stegosaurus" },
+  { id: "brachiosaurus", name: "Brachiosaurus", fullName: "Brachiosaurus", syllables: "BRACK-ee-oh-SORE-us", nickname: "The tall browser", diet: "Plant eater", period: "Late Jurassic", fact: "Its long neck reached leaves high in the trees.", size: "Taller than a giraffe", emoji: "🌿", color: "#687164", belly: "#aaa188", type: "longneck" },
+  { id: "velociraptor", name: "Velociraptor", fullName: "Velociraptor", syllables: "veh-LOSS-ih-RAP-tor", nickname: "The speedy hunter", diet: "Meat eater", period: "Late Cretaceous", fact: "It was feathered and about the size of a turkey.", size: "About as tall as a big dog", emoji: "🪶", color: "#755d46", belly: "#b28a5b", type: "raptor" },
+  { id: "ankylosaurus", name: "Ankylosaurus", fullName: "Ankylosaurus", syllables: "ANG-kih-loh-SORE-us", nickname: "The armored tank", diet: "Plant eater", period: "Late Cretaceous", fact: "Its heavy tail club helped keep it safe.", size: "As long as two beds", emoji: "🛡️", color: "#66634b", belly: "#91845c", type: "ankylo" },
+  { id: "parasaurolophus", name: "Parasaurolophus", fullName: "Parasaurolophus", syllables: "PAIR-ah-SORE-OL-oh-fus", nickname: "The musical crest", diet: "Plant eater", period: "Late Cretaceous", fact: "Its long head crest may have made deep sounds.", size: "As long as a small bus", emoji: "🎺", color: "#80624a", belly: "#b88b59", type: "parasaur" },
+  { id: "spinosaurus", name: "Spinosaurus", fullName: "Spinosaurus", syllables: "SPY-noh-SORE-us", nickname: "The river hunter", diet: "Fish & meat", period: "Late Cretaceous", fact: "It had a huge sail and spent lots of time near water.", size: "Longer than a school bus", emoji: "🐟", color: "#496763", belly: "#9a5e46", type: "spino" },
+  { id: "diplodocus", name: "Diplodocus", fullName: "Diplodocus", syllables: "dih-PLOD-oh-kus", nickname: "The whip tail", diet: "Plant eater", period: "Late Jurassic", fact: "Its tail was extra long and thin like a whip.", size: "As long as three school buses", emoji: "📏", color: "#65705a", belly: "#9c956e", type: "diplodocus" },
+  { id: "pteranodon", name: "Pteranodon", fullName: "Pteranodon", syllables: "teh-RAN-oh-don", nickname: "The flying reptile friend", diet: "Fish eater", period: "Late Cretaceous", fact: "Not a dinosaur, but a flying reptile that lived beside them!", size: "Wings wider than a car", emoji: "☁️", color: "#71675c", belly: "#a58c72", type: "pteranodon" },
+  { id: "iguanodon", name: "Iguanodon", fullName: "Iguanodon", syllables: "ih-GWAH-noh-don", nickname: "The thumb spike", diet: "Plant eater", period: "Early Cretaceous", fact: "It had pointy thumb spikes on its hands.", size: "As long as a small bus", emoji: "👍", color: "#5d6c52", belly: "#97966b", type: "iguanodon" },
+  { id: "pachy", name: "Pachycephalosaurus", fullName: "Pachycephalosaurus", syllables: "PACK-ee-SEF-ah-loh-SORE-us", nickname: "The dome head", diet: "Plant eater", period: "Late Cretaceous", fact: "The thick dome on its head was made of bone.", size: "About as long as a sofa", emoji: "⛑️", color: "#735847", belly: "#a87d56", type: "pachy" }
 ];
 
 const state = {
@@ -32,13 +32,13 @@ const screens = [...document.querySelectorAll(".screen")];
 const homeButton = $("#home-button");
 const soundButton = $("#sound-button");
 
-function svgParts(dino) {
+function svgParts(dino, paintKey = dino.id) {
   const c = dino.color;
   const b = dino.belly;
-  const dark = "#183a2a";
-  const eye = `<circle cx="0" cy="0" r="5.2" fill="#fffdf5"/><circle cx="1.4" cy=".5" r="2.5" fill="${dark}"/><circle cx="2" cy="-1" r=".7" fill="white"/>`;
-  const spots = `<g fill="${dark}" opacity=".16"><circle cx="190" cy="133" r="7"/><circle cx="220" cy="111" r="5"/><circle cx="249" cy="137" r="8"/><circle cx="280" cy="116" r="4"/></g>`;
-  const ground = `<ellipse cx="235" cy="263" rx="178" ry="16" fill="${dark}" opacity=".14"/>`;
+  const dark = "#292d25";
+  const eye = `<ellipse cx="0" cy="0" rx="4.8" ry="3.5" fill="#d5b35d" stroke="${dark}" stroke-width="1.5"/><ellipse cx=".8" cy=".2" rx="1.15" ry="2.7" fill="#11150f"/><circle cx="1.3" cy="-.8" r=".65" fill="#fff"/><path d="M-5 -2 Q0 -5 5 -1" fill="none" stroke="${dark}" stroke-width="1.8"/>`;
+  const spots = `<g fill="${dark}" opacity=".18"><ellipse cx="185" cy="128" rx="11" ry="5" transform="rotate(-18 185 128)"/><ellipse cx="220" cy="108" rx="8" ry="4" transform="rotate(12 220 108)"/><ellipse cx="252" cy="132" rx="13" ry="5" transform="rotate(-8 252 132)"/><ellipse cx="282" cy="113" rx="7" ry="3.5"/></g><g fill="none" stroke="#f1e4c4" stroke-width="1.4" opacity=".22"><path d="M158 151q22-13 42-2M212 142q19-11 38-1M263 151q18-10 34-1"/></g>`;
+  const ground = `<ellipse cx="235" cy="263" rx="178" ry="13" fill="#20271f" opacity=".17"/><ellipse cx="235" cy="260" rx="128" ry="5" fill="#20271f" opacity=".1"/>`;
 
   const templates = {
     trex: `${ground}<path d="M77 158 Q29 166 17 129 Q55 151 111 129" fill="${c}" stroke="${dark}" stroke-width="5" stroke-linejoin="round"/><ellipse cx="218" cy="151" rx="119" ry="70" fill="${c}" stroke="${dark}" stroke-width="5"/>${spots}<path d="M183 194 Q181 235 159 254 L201 254 Q216 219 220 192" fill="${c}" stroke="${dark}" stroke-width="5"/><path d="M265 194 Q274 227 259 253 L301 253 Q310 218 299 180" fill="${c}" stroke="${dark}" stroke-width="5"/><path d="M270 105 Q323 63 383 83 Q426 97 408 135 Q388 164 320 149 L270 139Z" fill="${c}" stroke="${dark}" stroke-width="5"/><path d="M328 145 Q365 161 401 137 Q378 172 327 164Z" fill="#fff6d6" stroke="${dark}" stroke-width="4"/><g transform="translate(386 104)">${eye}</g><path d="M277 147 Q310 163 294 182 Q282 186 271 167" fill="none" stroke="${dark}" stroke-width="6" stroke-linecap="round"/><path d="M286 169 l18 4" stroke="${dark}" stroke-width="5" stroke-linecap="round"/>`,
@@ -54,11 +54,56 @@ function svgParts(dino) {
     iguanodon: `${ground}<path d="M130 165 Q70 170 19 131 Q67 150 146 119" fill="${c}" stroke="${dark}" stroke-width="5"/><ellipse cx="231" cy="151" rx="103" ry="64" fill="${c}" stroke="${dark}" stroke-width="5"/>${spots}<path d="M292 109 Q331 76 384 93 Q416 112 396 140 Q354 155 304 135Z" fill="${c}" stroke="${dark}" stroke-width="5"/><g transform="translate(384 108)">${eye}</g><path d="M304 143 Q321 171 347 161 M322 158 l13-25" fill="none" stroke="${dark}" stroke-width="6" stroke-linecap="round"/><path d="M171 191 L162 249 H202 L213 196M273 192 L281 249 H320 L307 177" fill="${c}" stroke="${dark}" stroke-width="5"/>`,
     pachy: `${ground}<path d="M136 166 Q70 171 21 132 Q69 148 155 116" fill="${c}" stroke="${dark}" stroke-width="5"/><ellipse cx="237" cy="151" rx="97" ry="61" fill="${c}" stroke="${dark}" stroke-width="5"/>${spots}<path d="M297 112 Q323 65 378 69 Q422 76 417 121 Q393 151 316 139Z" fill="${c}" stroke="${dark}" stroke-width="5"/><path d="M334 91 Q349 48 387 58 Q411 67 408 96" fill="${b}" stroke="${dark}" stroke-width="5"/><g fill="${b}" stroke="${dark}" stroke-width="3"><path d="M326 101 l-14-18 22 5Z"/><path d="M405 99 l18-14-10 24Z"/></g><g transform="translate(393 104)">${eye}</g><path d="M177 190 L168 248 H207 L216 195M274 191 L282 248 H321 L308 176" fill="${c}" stroke="${dark}" stroke-width="5"/>`
   };
-  return templates[dino.type];
+  const shape = templates[dino.type]
+    .split(`fill="${c}"`).join(`fill="url(#skin-${paintKey})"`)
+    .split(`fill="${b}"`).join(`fill="url(#accent-${paintKey})"`)
+    .replaceAll('stroke-width="7"', 'stroke-width="4"')
+    .replaceAll('stroke-width="6"', 'stroke-width="3.5"')
+    .replaceAll('stroke-width="5"', 'stroke-width="3"')
+    .replaceAll('stroke-width="4"', 'stroke-width="2.5"');
+  return `${shape}${anatomyDetails(dino)}`;
 }
 
+function anatomyDetails(dino) {
+  const line = "#34382d";
+  const pale = "#dfd3b4";
+  const rust = "#76513b";
+  const details = {
+    trex: `<g fill="none" stroke="${line}" stroke-linecap="round"><path d="M318 94q29-13 63-4" stroke-width="3" opacity=".65"/><path d="M324 116q34 10 78 3" stroke-width="2" opacity=".45"/><path d="M301 132q-9 13-6 27M311 133q-7 15-2 29" stroke-width="2" opacity=".55"/><path d="M176 253l-13 7m27-7 11 7m61-7-11 7m38-7 12 7" stroke-width="4"/></g><g fill="${pale}" stroke="${line}" stroke-width="1"><path d="M342 146l6 12 6-11 7 13 6-15 7 12 6-15 7 10"/></g><ellipse cx="406" cy="112" rx="4" ry="2.2" fill="${line}"/><g fill="${line}" opacity=".42"><circle cx="331" cy="96" r="2"/><circle cx="342" cy="91" r="1.5"/><circle cx="350" cy="100" r="1.7"/></g>`,
+    triceratops: `<g fill="none" stroke="${line}" stroke-linecap="round"><path d="M351 79q18 27 19 62M373 76q8 29 5 68M393 85q-2 27-11 54" stroke-width="2" opacity=".48"/><path d="M178 252l-15 7m16-7 11 7m82-7-12 7m36-7 14 7" stroke-width="4"/></g><g fill="${line}" opacity=".34"><circle cx="346" cy="124" r="3"/><circle cx="357" cy="133" r="2.5"/><circle cx="369" cy="119" r="2"/><circle cx="386" cy="139" r="2.3"/></g><path d="M404 70q-3 21-7 35M349 69q3 18 5 32" fill="none" stroke="${pale}" stroke-width="2.5" opacity=".7"/>`,
+    stegosaurus: `<g fill="none" stroke="${line}" stroke-linecap="round"><path d="M143 70l8 38M196 47l7 47M247 40l5 52M296 61l1 49" stroke-width="2" opacity=".5"/><path d="M138 181q80 33 174 0" stroke-width="2" opacity=".45"/><path d="M151 252l-13 7m35-7 11 7m97-7-12 7m34-7 13 7" stroke-width="4"/></g><g fill="${pale}" opacity=".3"><circle cx="176" cy="145" r="2"/><circle cx="194" cy="157" r="2.5"/><circle cx="217" cy="139" r="1.8"/><circle cx="241" cy="158" r="2.2"/></g>`,
+    longneck: `<g fill="none" stroke="${line}" stroke-linecap="round"><path d="M317 70q17 10 29 3M311 88q18 10 30 4M306 107q18 9 30 3M301 126q17 8 30 3" stroke-width="2" opacity=".4"/><path d="M139 253l-15 7m38-7 13 7m102-7-13 7m38-7 14 7" stroke-width="4"/></g><g fill="${line}" opacity=".26"><ellipse cx="323" cy="52" rx="5" ry="2"/><ellipse cx="314" cy="98" rx="5" ry="2"/><ellipse cx="298" cy="137" rx="6" ry="2.5"/></g><ellipse cx="394" cy="41" rx="3.8" ry="2" fill="${line}"/>`,
+    raptor: `<g fill="none" stroke="${line}" stroke-linecap="round"><path d="M44 135l-17-17m36 27-19-25m36 28-18-22M176 127l-22-14m31 8-18-18m32 14-13-22M214 110l-8-24m22 20-2-27m20 28 7-24" stroke-width="3"/><path d="M298 88l12-17m3 23 16-15m-8 23 20-12" stroke-width="2.5"/><path d="M174 247l-15 7m43-8 15 5m56-5 11 8" stroke-width="4"/></g><path d="M282 238q18-3 22-18q5 23-12 32" fill="${pale}" stroke="${line}" stroke-width="2"/><ellipse cx="399" cy="109" rx="3.5" ry="1.8" fill="${line}"/>`,
+    ankylo: `<g fill="none" stroke="${line}" stroke-width="2" opacity=".6"><path d="M125 148l25-18 27 16 27-21 28 19 27-20 31 22 25-13"/><path d="M138 164l22-14 24 16 27-17 29 17 25-16 32 13"/></g><g fill="${pale}" opacity=".38"><circle cx="153" cy="139" r="4"/><circle cx="201" cy="137" r="4"/><circle cx="249" cy="138" r="4"/><circle cx="289" cy="146" r="4"/></g><g stroke="${line}" stroke-width="4"><path d="M121 243l-11 7m43-7 12 7m115-7-10 7m37-7 12 7"/></g>`,
+    parasaur: `<g fill="none" stroke="${line}" stroke-linecap="round"><path d="M347 88q18-25 38-44M316 128q42 15 83 3" stroke-width="2.5" opacity=".58"/><path d="M148 247l-13 7m40-7 12 7m92-7-12 7m38-7 13 7" stroke-width="4"/></g><path d="M132 130q83-35 170 5" fill="none" stroke="${pale}" stroke-width="7" opacity=".25"/><g fill="${line}" opacity=".3"><ellipse cx="348" cy="116" rx="4" ry="2"/><ellipse cx="363" cy="126" rx="3" ry="1.5"/></g>`,
+    spino: `<g fill="none" stroke="${line}" stroke-linecap="round"><path d="M145 77l8 48m28-64 11 65m35-67 7 66m35-53 2 55" stroke-width="2" opacity=".52"/><path d="M154 245l-13 7m40-7 12 7m90-7-12 7m38-7 13 7" stroke-width="4"/></g><path d="M130 126q76-28 179 1" fill="none" stroke="${pale}" stroke-width="4" opacity=".28"/><ellipse cx="424" cy="119" rx="4.5" ry="2" fill="${line}"/><g fill="${pale}" stroke="${line}" stroke-width=".8"><path d="M351 143l5 8 5-8 5 8 5-9 5 8 5-9 5 7"/></g>`,
+    diplodocus: `<g fill="none" stroke="${line}" stroke-linecap="round"><path d="M321 70q13 8 23 3M315 91q15 8 25 3M309 111q15 7 26 3" stroke-width="2" opacity=".42"/><path d="M165 249l-14 7m42-7 13 7m72-7-13 7m38-7 13 7" stroke-width="4"/></g><g fill="${line}" opacity=".38"><path d="M153 119l5-8 5 8 7-9 6 8 7-8 6 7 7-8 7 7"/></g><ellipse cx="393" cy="41" rx="3.5" ry="1.8" fill="${line}"/>`,
+    pteranodon: `<g fill="none" stroke="${line}" stroke-linecap="round"><path d="M54 70q79 23 145 88M91 73q63 30 108 87M391 78q-82 20-156 80M354 79q-67 29-119 80" stroke-width="2" opacity=".48"/><path d="M134 90l-38 31m222-28 43 27" stroke-width="2" opacity=".34"/></g><path d="M240 82q25 11 54 21" fill="none" stroke="${pale}" stroke-width="3" opacity=".55"/><ellipse cx="348" cy="137" rx="4" ry="1.8" fill="${line}"/>`,
+    iguanodon: `<g fill="none" stroke="${line}" stroke-linecap="round"><path d="M144 123q9 28 5 59M171 111q11 30 5 77M203 101q12 35 4 96M239 101q13 34 4 96M275 109q13 31 5 76" stroke-width="5" opacity=".26"/><path d="M163 248l-13 7m42-7 13 7m78-7-12 7m38-7 13 7" stroke-width="4"/></g><path d="M335 153l8-20 2 22" fill="${pale}" stroke="${line}" stroke-width="2"/><ellipse cx="402" cy="119" rx="4" ry="2" fill="${line}"/>`,
+    pachy: `<g fill="none" stroke="${line}" stroke-linecap="round"><path d="M346 72q26 18 57 14" stroke-width="2.5" opacity=".5"/><path d="M170 247l-13 7m42-7 13 7m72-7-12 7m38-7 13 7" stroke-width="4"/></g><g fill="${rust}" opacity=".7"><circle cx="351" cy="80" r="4"/><circle cx="365" cy="71" r="3"/><circle cx="382" cy="71" r="3.5"/><circle cx="397" cy="80" r="3"/><circle cx="335" cy="98" r="2.5"/><circle cx="408" cy="99" r="2.5"/></g><g fill="${line}" opacity=".3"><ellipse cx="321" cy="128" rx="5" ry="2"/><ellipse cx="339" cy="137" rx="4" ry="2"/></g>`
+  };
+  return details[dino.type] || "";
+}
+
+let svgInstance = 0;
+
 function dinoSvg(dino, label = true) {
-  return `<svg viewBox="0 0 450 280" role="${label ? "img" : "presentation"}" ${label ? `aria-label="Friendly illustration of ${dino.name}"` : "aria-hidden=\"true\""} xmlns="http://www.w3.org/2000/svg"><g stroke-linecap="round" stroke-linejoin="round">${svgParts(dino)}</g></svg>`;
+  const instanceId = `${dino.id}-${svgInstance++}`;
+  const skinId = `skin-${instanceId}`;
+  const accentId = `accent-${instanceId}`;
+  const shadowId = `shadow-${instanceId}`;
+  return `<svg viewBox="0 0 450 280" role="${label ? "img" : "presentation"}" ${label ? `aria-label="Child-friendly life reconstruction of ${dino.name}"` : "aria-hidden=\"true\""} xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="${skinId}" x1="0" y1="0" x2=".2" y2="1">
+        <stop offset="0" stop-color="${dino.belly}"/><stop offset=".28" stop-color="${dino.color}"/><stop offset=".72" stop-color="${dino.color}"/><stop offset="1" stop-color="#34382d"/>
+      </linearGradient>
+      <radialGradient id="${accentId}" cx="40%" cy="25%" r="80%">
+        <stop offset="0" stop-color="#d8c69d"/><stop offset=".38" stop-color="${dino.belly}"/><stop offset="1" stop-color="${dino.color}"/>
+      </radialGradient>
+      <filter id="${shadowId}" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="3" flood-color="#18231b" flood-opacity=".25"/></filter>
+    </defs>
+    <g stroke-linecap="round" stroke-linejoin="round" filter="url(#${shadowId})">${svgParts(dino, instanceId)}</g>
+  </svg>`;
 }
 
 function showScreen(id) {
